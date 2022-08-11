@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  es246:
+    image: obiba/es246
+    ports:
+      - "${HTTP_PORT}:9200"
+      - "${TRANSPORT_TCP_PORT}:9300"
+    # volumes:
+    #   - ${ES246_VOLUME}:/usr/share/elasticsearch/config
